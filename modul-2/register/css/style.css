@@ -1,0 +1,154 @@
+/* body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 100px;
+    background-color: white;
+    
+}
+
+hr{
+    border: 1px;
+    margin-bottom: 25px;
+    color: black;
+}
+
+.registerbtn{
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0p;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover{
+    opacity: 1;
+}
+
+a {
+    color: dodgerblue;
+}
+
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+} */
+
+body {
+	
+	background: #082032;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.form-control {
+	height: 40px;
+	background: #f2f2f2;
+	box-shadow: none !important;
+	border: none;
+    width: 500px;
+}
+.form-control:focus {
+	background: #e2e2e2;
+}
+.form-control, .btn {        
+	border-radius: 4px;
+}
+.signup-form {
+	width: 560px;
+	margin: 00px auto;
+}
+.signup-form form {
+	color: #999;
+	border-radius: 3px;
+	margin-bottom: 15px;
+	background: #fff;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	padding: 30px;
+}
+.signup-form h2   {
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	margin-top: 0;
+}
+
+.signup-form p {
+    color: black;
+    font-weight: bold;
+}
+
+.signup-form hr  {
+	margin: 0 -30px 20px;
+    size: 80%;
+    
+}    
+.signup-form .form-group {
+	margin-bottom: 20px;
+}
+.signup-form input[type="checkbox"] {
+	margin-top: 3px;
+}
+.signup-form .row div:first-child {
+	padding-right: 10px;
+}
+.signup-form .row div:last-child {
+	padding-left: 10px;
+}
+.signup-form .btn {        
+	font-size: 16px;
+	font-weight: bold;
+	background: #4CAF50;
+	border: none;
+	min-width: 140px;
+    width: 340px;
+    opacity: 0.9;
+}
+.signup-form .btn:hover, .signup-form .btn:focus {
+	/* background: #2389cd !important; */
+	outline: none;
+    opacity: 1;
+}
+.signup-form a {
+	color: #fff;
+	text-decoration: underline;
+}
+.signup-form a:hover {
+	text-decoration: none;
+}
+.signup-form form a {
+	color: dodgerblue;
+	text-decoration: none;
+}	
+.signup-form form a:hover {
+	text-decoration: underline;
+}
+.signup-form .hint-text  {
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+.signin  {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.btn{
+    size: 400px;
+}
+
+.form-group label{
+    font-weight: bolder;
+    color: black;
+    font-size: 15px;
+}
+
+.form-group a {
+    color: dodgerblue;
+}
