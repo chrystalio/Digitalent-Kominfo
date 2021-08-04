@@ -164,8 +164,8 @@ body {
 
 .image-logo{
     /* margin-left: 10px; */
-    width: 10em;
-    float: left;
+    width: 220px;
+    
     /* margin-right: 10px; */
     
 }
@@ -182,8 +182,5 @@ a {
 	margin-top: 20px;
 }
 
-.navbar-nav{
-	float: left;
-    padding-left: 50em;
-}
+
 
