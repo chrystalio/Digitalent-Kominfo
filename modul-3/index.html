@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -7,61 +8,135 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="pt-4">
-    <div class="signup-form">
-        <form action="#" method="post">
-            <h2 class="font-weight-bolder">Daftar</h2>
-            <p>Silakan isi formulir ini untuk membuat akun</p>
-            <hr>
-            <div class="form-group">
-                <label for="email" class="label-title">Email</label>
-                <input type="email" class="form-control" name="email" placeholder="Masukkan Email anda"
-                    required="required">
+
+<body class="">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="navbar-logo">
+            <img src="img/logo-kominfo-dts.png" class="image-logo" alt="">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">Features</a>
+            <a class="nav-item nav-link" href="#">Pricing</a>
+            <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Navigation Bar -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="navbar-logo">
+            <img src="img/logo-kominfo-dts.png" class="image-logo" alt="">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Berita</a>
+                <a class="nav-item nav-link" href="#">Tentang</a>
+                <a class="nav-item nav-link" href="#">Partner</a>
+                <a class="nav-item nav-link" href="#">Kontak</a>
             </div>
-            <div class="form-group">
-                <label for="pass" class="label-title">Password</label>
-                <input type="password" class="form-control" name="pass" placeholder="Masukkan Password Anda"
-                    required="required">
+        </div>
+    </nav> -->
+
+    <!-- <div class="navbar">
+            
+            <div class="bg-nav">
+                <div class="navbar-logo">
+                    <img src="img/logo-kominfo-dts.png" class="image-logo" alt="Logo">
+                </div>
             </div>
-            <div class="form-group">
-                <label for="confirm_pass" class="label-title">Konfirmasi Password</label>
-                <input type="password" class="form-control" name="confirm_pass"
-                    placeholder="Konfirmasi Ulang Password Anda" required="required">
+            
+            <div class="navbar-list">
+                <ul class="navbar-menu">
+                    <li class="text-white">Home</li>
+                    <li class="text-white">Berita</li>
+                    <li class="text-white">Tentang Kami</li>
+                    <li class="text-white">Partner</li>
+                    <li class="text-white">Kontak</li>
+                </ul>
+                
             </div>
-            <div class="form-group">
-                <label for="gender">Jenis Kelamin</label> <br>
-                <input type="radio" class="ml-1" name="gender" value="laki-laki"> laki-laki <br>
-                <input type="radio" class="ml-1" name="gender" value="perempuan"> perempuan
+        </div> -->
+    < <!-- <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="signup-form">
+                    <form action="#" method="post">
+                        <h2 class="font-weight-bolder">Daftar</h2>
+                        <p>Silakan isi formulir ini untuk membuat akun</p>
+                        <hr>
+                        <div class="form-group">
+                            <label for="email" class="label-title">Email</label>
+                            <input type="email" class="form-control" name="email" placeholder="Masukkan Email anda"
+                                required="required">
+                        </div>
+                        <div class="form-group">
+                            <label for="pass" class="label-title">Password</label>
+                            <input type="password" class="form-control" name="pass" placeholder="Masukkan Password Anda"
+                                required="required">
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm_pass" class="label-title">Konfirmasi Password</label>
+                            <input type="password" class="form-control" name="confirm_pass"
+                                placeholder="Konfirmasi Ulang Password Anda" required="required">
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Jenis Kelamin</label> <br>
+                            <input type="radio" class="ml-1" name="gender" value="laki-laki"> laki-laki <br>
+                            <input type="radio" class="ml-1" name="gender" value="perempuan"> perempuan
+                        </div>
+                        <div class="form-group">
+                            <label for="kendaraan">Kendaraan yang anda miliki?</label> <br>
+                            <input type="checkbox" class="ml-1" name="kendaraan" value="Mobil"> Mobil <br>
+                            <input type="checkbox" class="ml-1" name="kendaraan" value="Motor"> Motor <br>
+                            <input type="checkbox" class="ml-1" name="kendaraan" value="Sepeda"> Sepeda <br>
+                            <input type="checkbox" class="ml-1" name="kendaraan" value="pesawat"> Pesawat
+                        </div>
+                        <div class="form-group">
+                            <p>Dari mana anda mengetahui website ini?</p>
+                            <select name="ask" id="ask">
+                                <option value="Facebook">Facebook</option>
+                                <option value="Twitter">Twitter</option>
+                                <option value="Instagram">Instagram</option>
+                                <option value="Teman">Teman</option>
+                            </select>
+                        </div>
+                        <hr> -->
+                        <!-- <div class="form-group">
+                            <label class="form-check-label text-center w-100"> Saya menyetujui
+                                <a href="#">Kebijakan Penggunaan &amp; Privasi</a>
+                            </label>
+                        </div> -->
+                        <!-- <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-lg w-100">Sign Up</button>
+                            <p class="text-center mt-4">Sudah punya akun? <a href="#">Masuk</a></p>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="kendaraan">Kendaraan yang anda miliki?</label> <br>
-                <input type="checkbox" class="ml-1" name="kendaraan" value="Mobil"> Mobil <br>
-                <input type="checkbox" class="ml-1" name="kendaraan" value="Motor"> Motor <br>
-                <input type="checkbox" class="ml-1" name="kendaraan" value="Sepeda"> Sepeda <br>
-                <input type="checkbox" class="ml-1" name="kendaraan" value="pesawat"> Pesawat
+
+            <div class="col-md-4">
+                <div class="alert alert-secondary" role="alert">Ini untuk Informasi</div>
             </div>
-            <div class="form-group">
-                <p>Dari mana anda mengetahui website ini?</p>
-                <select name="ask" id="ask">
-                    <option value="Facebook">Facebook</option>
-                    <option value="Twitter">Twitter</option>
-                    <option value="Instagram">Instagram</option>
-                    <option value="Teman">Teman</option>
-                </select>
-            </div>
-            <hr>
-            <div class="form-group">
-                <label class="form-check-label text-center w-100"> Saya menyetujui
-                    <a href="#">Kebijakan Penggunaan &amp; Privasi</a>
-                </label>
-            </div>
-            <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-lg w-100">Sign Up</button>
-                <p class="text-center mt-4">Sudah punya akun? <a href="#">Masuk</a></p>
-            </div>
-        </form>
+        </div>
     </div>
-    <script src="js/bootstrap.min.js"></script>
-    </body>
+    <hr /> -->
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 
 </html>

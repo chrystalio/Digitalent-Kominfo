@@ -1,8 +1,5 @@
-/* body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
-}
 
+/*
 * {
     box-sizing: border-box;
 }
@@ -44,7 +41,6 @@ a {
 } */
 
 body {
-	
 	background: #082032;
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -152,3 +148,42 @@ body {
 .form-group a {
     color: dodgerblue;
 }
+
+.navbar{
+    /* padding: px 70px; */
+    background-color: #133B5C;
+}
+
+
+/* li {
+    float: left;
+    padding: 13px 5px;
+    margin-left: 20px;
+} */
+
+
+.image-logo{
+    /* margin-left: 10px; */
+    width: 10em;
+    float: left;
+    /* margin-right: 10px; */
+    
+}
+
+ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.row{
+	margin-top: 20px;
+}
+
+.navbar-nav{
+	float: left;
+    padding-left: 50em;
+}
+
