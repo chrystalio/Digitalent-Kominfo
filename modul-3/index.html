@@ -44,15 +44,128 @@
     </nav>
     <!-- End Of Navbar -->
 
-        <div class="container" style="padding-top: 120px; padding-left: 20px; padding-right: 20px;">
-            <div class="jumbotron text-white ">
-                <h1 class="display-4 text-center">Selamat Datang!</h1>
+    <div class="container" style="padding-top: 120px; padding-left: 20px; padding-right: 20px;">
+        <h1 class="display-2 text-white text-center">Selamat Datang!</h1>
+    </div>
+    <div class="" style="padding-top:2px; padding-left: 110px; padding-right: 110px">
+        <hr class="mt-4 bg-white">
+    </div>
+
+    <div class="row">
+        <div class="col-md-7">
+            <form action="index.html" method="post" style="background-color: #1F4068;">
+                <h1 class="text-white">Form Pendaftaran</h1>
+                <hr class="bg-light">
+                <fieldset class="text-white">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control-sm" id="name" name="user_name">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control form-control-sm" id="mail" name="user_email">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="user_password">
+                    <label for="confirm_pass">Jenis Kelamin</label>
+                        <select>
+                            <option>Pilih Jenis Kelamin</option>
+                            <option value="0">Laki-Laki</option>
+                            <option value="1">Perempuan</option>
+                        </select>
+                    <label>Age:</label>
+                    <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13"
+                        class="light">Under 13</label><br>
+                    <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13"
+                        class="light">Over 13</label>
+                </fieldset>
+                <fieldset class="text-white">
+                    <label for="job">Job Role:</label>
+                    <select id="job" name="user_job">
+                        <optgroup label="Web">
+                            <option value="frontend_developer">Front-End Developer</option>
+                            <option value="php_developer">PHP Developer</option>
+                            <option value="python_developer">Python Developer</option>
+                            <option value="rails_developer">Rails Developer</option>
+                            <option value="web_designer">Web Designer</option>
+                            <option value="wordpress_developer">Wordpress Developer</option>
+                        </optgroup>
+                    </select>
+
+                    <label>Interests:</label>
+                    <input type="checkbox" id="development" value="interest_development" name="user_interest"><label
+                        class="light" for="development">Development</label><br>
+                    <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light"
+                        for="design">Design</label><br>
+                    <input type="checkbox" id="business" value="interest_business" name="user_interest"><label
+                        class="light" for="business">Business</label>
+
+                </fieldset>
+
+                <button type="submit">Sign Up</button>
+
+            </form>
+        </div>
+    </div>
+    <!-- <div class="row" style="padding-top: 30px; padding-left: 10px; padding-right: 10px;">
+            <div class="container" ">
+                    <div class=" col-md-6" style="background-color: rgb(255, 52, 52);">
+                <form action="#" method="post">
+                    <h2 class="font-weight-bolder" style="padding-top: 30px;">Daftar</h2>
+                    <p>Silakan isi formulir ini untuk membuat akun</p>
+                    <hr>
+                    <div class="form-group">
+                        <label for="email" class="label-title">Email</label>
+                        <input type="email" class="form-control " name="email" placeholder="Masukkan Email anda"
+                            required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="pass" class="label-title">Password</label>
+                        <input type="password" class="form-control" name="pass" placeholder="Masukkan Password Anda"
+                            required="required">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm_pass" class="label-title">Konfirmasi Password</label>
+                        <input type="password" class="form-control" name="confirm_pass"
+                            placeholder="Konfirmasi Ulang Password Anda" required="required">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm_pass" class="label-title">Jenis Kelamin</label>
+                        <select class="form-control form-control-sm">
+                            <option>Pilih Jenis Kelamin</option>
+                            <option value="0">Laki-Laki</option>
+                            <option value="1">Perempuan</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="kendaraan">Kendaraan yang anda miliki?</label> <br>
+                        <input type="checkbox" class="ml-1" name="kendaraan" value="Mobil"> Mobil <br>
+                        <input type="checkbox" class="ml-1" name="kendaraan" value="Motor"> Motor <br>
+                        <input type="checkbox" class="ml-1" name="kendaraan" value="Sepeda"> Sepeda <br>
+                        <input type="checkbox" class="ml-1" name="kendaraan" value="pesawat"> Pesawat
+                    </div>
+                    
+                    <div class="form-group">
+                        <p>Dari mana anda mengetahui website ini?</p>
+                        <select name="ask" id="ask">
+                            <option value="Facebook">Facebook</option>
+                            <option value="Twitter">Twitter</option>
+                            <option value="Instagram">Instagram</option>
+                            <option value="Teman">Teman</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div class="form-group">
+                        <label class="form-check-label text-center w-100"> Saya menyetujui
+                            <a href="#">Kebijakan Penggunaan &amp; Privasi</a>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-lg w-100">Sign Up</button>
+                        <p class="text-center mt-4">Sudah punya akun? <a href="#">Masuk</a></p>
+                    </div>
+                </form>
             </div>
         </div>
-        <div class="" style="padding-top:2px; padding-left: 110px; padding-right: 110px"> 
-            <hr class="my-8 bg-white">
-        </div>
-        
+    </div> -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
