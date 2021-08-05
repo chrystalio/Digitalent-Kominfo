@@ -44,129 +44,111 @@
     </nav>
     <!-- End Of Navbar -->
 
-    <div class="container" style="padding-top: 120px; padding-left: 20px; padding-right: 20px;">
-        <h1 class="display-2 text-white text-center">Selamat Datang!</h1>
+    <!-- Jumbotron -->
+    <div class="container  " style="padding-top: 120px; padding-left: 20px; padding-right: 20px;">
+        <p class=" jumbotron text-white text-center" style="font-size: 28px;">Selamat Datang di website pendaftaran peserta DTS 2021,<br>
+            Mohon isi form di bawah untuk menyelesaikan pendaftaran DTS 2021
+        </p>
     </div>
-    <div class="" style="padding-top:2px; padding-left: 110px; padding-right: 110px">
-        <hr class="mt-4 bg-white">
+    <!-- Akhir Jumbotron -->
+    <!-- Garis Pembatas -->
+    <div style="padding-top:2px; padding-left: 110px; padding-right: 110px">
+        <hr class="mt-1 bg-white">
     </div>
-
+    <!-- Akhir garis pembatas -->
+    <!-- Form pendaftaran -->
     <div class="row">
         <div class="col-md-7">
-            <form action="index.html" method="post" style="background-color: #1F4068;">
+            <form action="index.html" method="post">
                 <h1 class="text-white">Form Pendaftaran</h1>
                 <hr class="bg-light">
                 <fieldset class="text-white">
+                    <!-- Nama -->
                     <label for="name">Name:</label>
-                    <input type="text" class="form-control-sm" id="name" name="user_name">
+                    <input type="text" class=" form-control form-control-sm" id="name" name="user_name" placeholder="Masukkan Nama Anda" required>
+                    <!-- Email -->
                     <label for="email">Email:</label>
-                    <input type="email" class="form-control form-control-sm" id="mail" name="user_email">
+                    <input type="email" class="form-control form-control-sm" id="mail" name="user_email" placeholder="Masukkan Email Anda" required>
+                    <!-- Password -->
                     <label for="password">Password:</label>
-                    <input type="password" id="password" name="user_password">
-                    <label for="confirm_pass">Jenis Kelamin</label>
+                    <input type="password" class="form-control form-control-sm" id="password" name="user_password" placeholder="Masukkan Password Anda" required>
+                    <!-- Konfirmasi Password -->
+                    <label for="confirm_pass">Konfirmasi Password</label>
+                    <input type="password" class="form-control form-control-sm" name="confirm_pass" id="confirm_pass" placeholder="Masukkan Ulang Password Anda" required>
+                    <!-- Jenis Kelamin -->
+                    <label for="jenis_kelamin">Jenis Kelamin</label>
                         <select>
                             <option>Pilih Jenis Kelamin</option>
                             <option value="0">Laki-Laki</option>
                             <option value="1">Perempuan</option>
                         </select>
-                    <label>Age:</label>
-                    <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13"
-                        class="light">Under 13</label><br>
-                    <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13"
-                        class="light">Over 13</label>
-                </fieldset>
-                <fieldset class="text-white">
-                    <label for="job">Job Role:</label>
-                    <select id="job" name="user_job">
-                        <optgroup label="Web">
-                            <option value="frontend_developer">Front-End Developer</option>
-                            <option value="php_developer">PHP Developer</option>
-                            <option value="python_developer">Python Developer</option>
-                            <option value="rails_developer">Rails Developer</option>
-                            <option value="web_designer">Web Designer</option>
-                            <option value="wordpress_developer">Wordpress Developer</option>
+                    <!-- Tanggal Lahir -->
+                    <label for="tgl_lahir">Tanggal Lahir: </label>
+                    <input type="date" name="tgl_lahir" id="tgl_lahir">
+                    <!-- Pilihan peserta -->
+                    <label for="jurusan">Pilihan jurusan:</label>
+                    <select id="jurusan" name="jurusan">
+                        <optgroup label="Silahkan Pilih Sesuai Minat Anda">
+                            <option value="junior_web_dev">Junior Web Developer</option>
+                            <option value="network_admin">Junior Network Administrator</option>
+                            <option value="mobile_dev">Junior Mobile Programmer</option>
+                            <option value="graphic_design">Junior Graphic Designer</option>
+                            <option value="multimedia_designer">Intermediate Multimedia Designer</option>
+                            <option value="animator">Intermediate Animator</option>
+                            <option value="video_editor">Video Editor</option>
+                            <option value="data_management">Data Management Staff</option>
                         </optgroup>
                     </select>
 
-                    <label>Interests:</label>
-                    <input type="checkbox" id="development" value="interest_development" name="user_interest"><label
-                        class="light" for="development">Development</label><br>
-                    <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light"
-                        for="design">Design</label><br>
-                    <input type="checkbox" id="business" value="interest_business" name="user_interest"><label
-                        class="light" for="business">Business</label>
+                    <label for="pendidikan">Pendidikan terakhir</label>
+                    <input type="radio" name="pendidikan" value="SD" id="pendidikan"> SD <br>
+                    <input type="radio" name="pendidikan" value="SMP" id="pendidikan"> SMP <br>
+                    <input type="radio" name="pendidikan" value="SMA" id="pendidikan"> SMA <br>
+                    <input type="radio" name="pendidikan" value="SMK" id="pendidikan"> SMK
 
+                    <label class="mt-2" for="perangkat">Perangkat yang anda gunakan sehari-hari :</label>
+                    <input type="checkbox" name="perangkat" value="laptop">Laptop
+                    <input type="checkbox" name="perangkat" value="hp">Handphone
+                    <input type="checkbox" name="perangkat" value="tab">Tablet
+                    <input type="checkbox" name="perangkat" value="tidak_ada">Tidak punya
                 </fieldset>
-
-                <button type="submit">Sign Up</button>
-
+                <button type="submit" class="btn bg-primary btn-lg w-100 text-white">Sign Up</button>
             </form>
         </div>
-    </div>
-    <!-- <div class="row" style="padding-top: 30px; padding-left: 10px; padding-right: 10px;">
-            <div class="container" ">
-                    <div class=" col-md-6" style="background-color: rgb(255, 52, 52);">
-                <form action="#" method="post">
-                    <h2 class="font-weight-bolder" style="padding-top: 30px;">Daftar</h2>
-                    <p>Silakan isi formulir ini untuk membuat akun</p>
-                    <hr>
-                    <div class="form-group">
-                        <label for="email" class="label-title">Email</label>
-                        <input type="email" class="form-control " name="email" placeholder="Masukkan Email anda"
-                            required="required">
-                    </div>
-                    <div class="form-group">
-                        <label for="pass" class="label-title">Password</label>
-                        <input type="password" class="form-control" name="pass" placeholder="Masukkan Password Anda"
-                            required="required">
-                    </div>
-                    <div class="form-group">
-                        <label for="confirm_pass" class="label-title">Konfirmasi Password</label>
-                        <input type="password" class="form-control" name="confirm_pass"
-                            placeholder="Konfirmasi Ulang Password Anda" required="required">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="confirm_pass" class="label-title">Jenis Kelamin</label>
-                        <select class="form-control form-control-sm">
-                            <option>Pilih Jenis Kelamin</option>
-                            <option value="0">Laki-Laki</option>
-                            <option value="1">Perempuan</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="kendaraan">Kendaraan yang anda miliki?</label> <br>
-                        <input type="checkbox" class="ml-1" name="kendaraan" value="Mobil"> Mobil <br>
-                        <input type="checkbox" class="ml-1" name="kendaraan" value="Motor"> Motor <br>
-                        <input type="checkbox" class="ml-1" name="kendaraan" value="Sepeda"> Sepeda <br>
-                        <input type="checkbox" class="ml-1" name="kendaraan" value="pesawat"> Pesawat
-                    </div>
-                    
-                    <div class="form-group">
-                        <p>Dari mana anda mengetahui website ini?</p>
-                        <select name="ask" id="ask">
-                            <option value="Facebook">Facebook</option>
-                            <option value="Twitter">Twitter</option>
-                            <option value="Instagram">Instagram</option>
-                            <option value="Teman">Teman</option>
-                        </select>
-                    </div>
-                    <hr>
-                    <div class="form-group">
-                        <label class="form-check-label text-center w-100"> Saya menyetujui
-                            <a href="#">Kebijakan Penggunaan &amp; Privasi</a>
-                        </label>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-lg w-100">Sign Up</button>
-                        <p class="text-center mt-4">Sudah punya akun? <a href="#">Masuk</a></p>
-                    </div>
-                </form>
+        <!-- Akhir Form Pendaftaran -->
+        <!-- Pengumuman -->
+        <div class="col-md-4">
+            <div class="alert alert-primary" role="alert"> 
+                <h2 class="text-center display-5 text-white">Pengumuman</h2> 
+                <hr>
+                <p class="text-white">Total Peserta saat ini : 2530 Peserta</p>
+                <p class="text-white">
+                    <ol class="text-white text-left">
+                        <li>Junior Web Developer </li>
+                        <li>Junior Network Administrator </li>
+                        <li>Junior Mobile Programmer </li>
+                        <li>Junior Graphic Designer </li>
+                        <li>Intermediate Animator</li>
+                        <li>Intermediate Multimedia Designer</li>
+                        <li>Video Editor</li>
+                        <li>Data Management Staff</li>
+                    </ol>
+                </p>
             </div>
         </div>
-    </div> -->
-
+    </div>
+    <!-- Akhir Pengumuman -->
+    <br>
+    <br>
+    <!-- Footer -->
+    <footer class="page-footer font-small text-white" style="background-color: #133B5C;">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://github.com/chrystalio" class="text-white">Chrystalio</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
