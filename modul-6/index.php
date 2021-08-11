@@ -13,7 +13,7 @@
 <body>
   <h1 class="text-center pt-4 text-white">INPUT FORMULIR BIODATA MAHASISWA</h1>
   <div class="container p-8">
-    <form class="text-white">
+    <form class="">
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="inputEmail4">Nama Depan</label>
@@ -29,8 +29,11 @@
         <input type="text" class="form-control" id="inputAlamat" placeholder="1234 Main St">
       </div>
       <div class="form-group">
-        <label for="inputAddress2">Jenis Kelamin</label>
-        <input type="text" class="form-control" id="inputJenisKelamin" placeholder="Apartment, studio, or floor">
+        <label for="inputJenisKelamin">Jenis Kelamin</label>
+        <select id="inputJenisKelamin" class="form-control">
+          <option selected>Laki-Laki</option>
+          <option>Perempuan</option>
+        </select>
       </div>
       <div class="form-group">
         <div class="form-group">
@@ -38,14 +41,14 @@
           <input type="number" class="form-control" id="inputUmur" min="17" max="25">
         </div>
       </div>
-      
+
       <button type="submit" class="btn btn-primary">Sign in</button>
     </form>
   </div>
 
 
 
-<!-- JS - JQUERY -->
+  <!-- JS - JQUERY -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
   </script>
