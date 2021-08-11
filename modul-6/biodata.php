@@ -29,7 +29,7 @@
                 <p class="card-text">Alamat : <?php echo $alamat; ?></p>
                 <p class="card-text">Jenis Kelamin : <?php echo $JK;?></p>
                 <p class="card-text">Umur : <?php echo $umur; ?></p>
-            </div>
+            </div>`
         </div>
     </div>
 
