@@ -2,8 +2,8 @@ body{
     background-color: #082032;
 }
 
-.container{
-    padding: 50px 40px;
+.formulir-input{
+    padding: 20px 60px;
     background-color: white;
     border-radius: 5px;
     margin-top: 5em;
@@ -12,3 +12,12 @@ body{
     box-shadow: 3px 7px 28px 8px rgba(0,0,0,0.64);
 }
 
+.biodata{
+    padding: 30px 80px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 5em;
+    -webkit-box-shadow: 3px 7px 28px 8px rgba(0,0,0,0.64);
+    -moz-box-shadow: 3px 7px 28px 8px rgba(0,0,0,0.64);
+    box-shadow: 3px 7px 28px 8px rgba(0,0,0,0.64);
+}

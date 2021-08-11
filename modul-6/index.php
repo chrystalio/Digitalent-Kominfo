@@ -12,33 +12,33 @@
 
 <body>
   <h1 class="text-center pt-4 text-white">INPUT FORMULIR BIODATA MAHASISWA</h1>
-  <div class="container p-8">
-    <form class="">
+  <div class="container p-8 pb-2 formulir-input">
+    <form action="biodata.php" method="POST">
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="inputEmail4">Nama Depan</label>
-          <input type="text" class="form-control" id="inputNamaDepan" placeholder="Masukkan Nama Depan">
+          <input type="text" class="form-control" id="inputNamaDepan" name="inputNamaDepan" placeholder="Masukkan Nama Depan" required>
         </div>
         <div class="form-group col-md-6">
-          <label for="inputPassword4">Nama Belakang</label>
-          <input type="text" class="form-control" id="inputNamaBelakang" placeholder="Masukkan Nama Belakang">
+          <label for="inputNamaDepan">Nama Belakang</label>
+          <input type="text" class="form-control" id="inputNamaBelakang" name="inputNamaBelakang" placeholder="Masukkan Nama Belakang">
         </div>
       </div>
       <div class="form-group">
-        <label for="inputAddress">Alamat</label>
-        <input type="text" class="form-control" id="inputAlamat" placeholder="Masukkan Alamat">
+        <label for="inputAlamat">Alamat</label>
+        <input type="text" class="form-control" id="inputAlamat" name="inputAlamat" placeholder="Masukkan Alamat" required>
       </div>
       <div class="form-group">
-        <label for="inputJenisKelamin">Jenis Kelamin</label>
-        <select id="inputJenisKelamin" class="form-control">
-          <option selected>Laki-Laki</option>
-          <option>Perempuan</option>
+        <label for="JK">Jenis Kelamin</label>
+        <select id="JK" name="JK" class="form-control" required>
+          <option selected name="JK" value="Laki-laki">Laki-Laki</option>
+          <option name="JK" value="Perempuan">Perempuan</option>
         </select>
       </div>
       <div class="form-group">
         <div class="form-group mb-5">
           <label for="inputUmur">Usia</label>
-          <input type="number" class="form-control" id="inputUmur" min="17" max="25">
+          <input type="number" class="form-control" id="inputUmur" name="inputUmur" min="17" max="25">
         </div>
       </div>
       <button type="submit" class="btn btn-primary  btn-lg btn-block" >Submit</button>
