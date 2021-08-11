@@ -6,12 +6,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
-	<title>Document</title>
+	<title>Aplikasi Pembayaran JS</title>
 </head>
 
 <body style="padding: 30px;">
 	<div class="container" style="padding: 30px;">
-		<form action="">
+		<form action="" name="pemesanan">
 			<table class="table table-sm table-bordered table-responsive-lg table-hover">
 				<h1 class="text-center">Aplikasi Kasir Javascript Sederhana</h1>
 				<hr>
@@ -20,7 +20,7 @@
 						<th scope="col">No</th>
 						<th scope="col">Makanan/Minuman</th>
 						<th scope="col">Harga</th>
-						<th scope="col">Jumlah Pemesanan</th>
+						<th scope="col">Harga Pemesanan</th>
 					</tr>
 				</thead>
 				<tbody class="text-center">
@@ -29,7 +29,7 @@
 						<td>Nasi Goreng</td>
 						<td> Rp. <input type="text" name="harga1" value="12000" size="10" id="" readonly></td>
 						<td>
-							<center><input type="text" name="jumlah1" onchange="proses()" id="" size="10"
+							<center><input type="number" name="jumlah1" value="0" onchange="proses()"" id="" size="10"
 									style="text-align: center;"></center>
 						</td>
 					</tr>
@@ -38,7 +38,7 @@
 						<td>Ayam Bakar</td>
 						<td> Rp. <input type="text" name="harga2" value="15000" size="10" id="" readonly></td>
 						<td>
-							<center><input type="text" name="jumlah2" onchange="proses()" id="" size="10"
+							<center><input type="number" name="jumlah2" value="0" onchange="proses()" id="" size="10"
 									style="text-align: center;"></center>
 						</td>
 					</tr>
@@ -47,7 +47,7 @@
 						<td>Ayam Penyet</td>
 						<td> Rp. <input type="text" name="harga3" value="18000" size="10" id="" readonly></td>
 						<td>
-							<center><input type="text" name="jumlah3" onchange="proses()" id="" size="10"
+							<center><input type="number"" name="jumlah3" value="0" onchange="proses()" id="" size="10"
 									style="text-align: center;"></center>
 						</td>
 					</tr>
@@ -56,7 +56,7 @@
 						<td>Bakso Sapi</td>
 						<td>Rp. <input type="text" name="harga4" value="10000" size="10" id="" readonly></td>
 						<td>
-							<center><input type="text" name="jumlah4" onchange="proses()" id="" size="10"
+							<center><input type="number" name="jumlah4" value="0" onchange="proses()" id="" size="10"
 									style="text-align: center;"></center>
 						</td>
 					</tr>
@@ -65,25 +65,7 @@
 						<td>Teh Obeng</td>
 						<td>Rp. <input type="text" name="harga5" value="5000" size="10" id="" readonly></td>
 						<td>
-							<center><input type="text" name="jumlah5" onchange="proses()" id="" size="10"
-									style="text-align: center;"></center>
-						</td>
-					</tr>
-					<tr>
-						<th scope="row">6</th>
-						<td>Milo Es</td>
-						<td> Rp. <input type="text" name="harga6" value="8000" size="10" id="" readonly></td>
-						<td>
-							<center><input type="text" name="jumlah6" onchange="proses()" id="" size="10"
-									style="text-align: center;"></center>
-						</td>
-					</tr>
-					<tr>
-						<th scope="row">7</th>
-						<td>Kopi O</td>
-						<td> Rp. <input type="text" name="harga7" value="5000" size="10" id="" readonly></td>
-						<td>
-							<center><input type="text" name="jumlah7" onchange="proses()" id="" size="10"
+							<center><input type="number" name="jumlah5" value="0" onchange="proses()" id="" size="10"
 									style="text-align: center;"></center>
 						</td>
 					</tr>
@@ -97,12 +79,12 @@
 					<tr>
 						<td colspan=3 align="right">DISKON</td>
 						<td>
-							<center>Rp. <input type="text" name="potongan" size="12" style="text-align:center" readonly>
+							<center>Rp. <input type="" name="potongan" size="12" style="text-align:center" readonly>
 							</center>
 						</td>
 						</td>
 					<tr>
-						<td colspan=3 align="right">JUMLAH BAYAR</td>
+						<td colspan=3 align="right">HARGA BAYAR</td>
 						<td>
 							<center>Rp. <input type="text" name="bayar" size="12" style="text-align:center" readonly>
 							</center>
@@ -116,7 +98,7 @@
 		<footer class="text-center">Made With ❤️ By <a href="https://github.com/chrystalio">Chrystalio</a></footer>
 	</div>
 	
-	<script src="app.js"></script>
+	<script type="text/javascript" src="app.js"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
