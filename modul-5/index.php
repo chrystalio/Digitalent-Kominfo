@@ -1,127 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/stylesheet.css">
-    <title>Selamat Datang</title>
+    <title>Biodata</title>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-dark navbar-expand-sm  fixed-top">
-        <div class="container">
-            <a href="#" class="navbar-brand">
-                <img src="img/logo-kominfo-dts.png" alt="Logo-DTS">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div id="navbarCollapse" class="collapse navbar-collapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="" class="nav-link active">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link active">News</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link active">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link active">Partner</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link active">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- End Of Navbar -->
+    <table border=0>
+        <form action="show.php" method="POST">
+            <tr>
+                <td>NPM</td>
+                <td>:</td>
+                <td><input type=text name=NPM></td>
+            </tr>
 
-    <!-- Jumbotron -->
-    <div class="container" style="padding-top: 120px; padding-left: 20px; padding-right: 20px;">
-        <p class=" jumbotron text-white text-center" style="font-size: 28px;">Silahkan isi data diri anda di formulir bawah ini
-        </p>
-    </div>
-    <!-- Akhir Jumbotron -->
-    <!-- Garis Pembatas -->
-    <div style="padding-top:2px; padding-left: 110px; padding-right: 110px">
-        <hr class="mt-1 bg-white">
-    </div>
-    <!-- Akhir garis pembatas -->
-    <?php 
-	if(isset($_GET['nama'])){
-		if($_GET['nama'] == "kosong"){
-			echo "<h4 style='color:red'>Nama Belum Di Masukkan !</h4>";
-		}
-	}
-	?>
-    <!-- Form pendaftaran -->
-        <div class="">
-            <form action="cek.php" method="post">
-                <h2 class="text-white text-center">Formulir Biodata Peserta</h2>
-                <hr class="bg-light">
-                <fieldset class="text-white">
-                    <!-- Nama -->
-                    <label for="name">Nama:</label>
-                    <input type="text" class=" form-control form-control-sm" id="name" name="user_name" placeholder="Masukkan Nama Anda" required>
-                    <!-- Jenis Kelamin -->
-                    <label for="jenis_kelamin">Jenis Kelamin: </label>
-                        <select>
-                            <option>Pilih Jenis Kelamin</option>
-                            <option value="0">Laki-Laki</option>
-                            <option value="1">Perempuan</option>
-                        </select>
-                    <!-- Tanggal Lahir -->
-                    <label for="tgl_lahir">Tanggal Lahir: </label>
-                    <input type="date" name="tgl_lahir" id="tgl_lahir" placeholder="Masukkan Tanggal Lahir Anda" required>
-                    <!-- Umur -->
-                    <label for="umur">Umur: </label>
-                    <input type="number" name="" id="" min="15" max="30" placeholder="Masukkan Umur Anda" required>
-                    <!-- Alamat -->
-                    <label for="alamat">Alamat</label>
-                    <textarea name="alamat" id="" cols="10" rows="2" placeholder="Masukkan Alamat Anda" required></textarea>
-                    <!-- Pilihan peserta -->
-                    <!-- <label for="jurusan">Pilihan jurusan:</label>
-                    <select id="jurusan" name="jurusan">
-                        <optgroup label="Silahkan Pilih Sesuai Minat Anda">
-                            <option value="junior_web_dev">Junior Web Developer</option>
-                            <option value="network_admin">Junior Network Administrator</option>
-                            <option value="mobile_dev">Junior Mobile Programmer</option>
-                            <option value="graphic_design">Junior Graphic Designer</option>
-                            <option value="multimedia_designer">Intermediate Multimedia Designer</option>
-                            <option value="animator">Intermediate Animator</option>
-                            <option value="video_editor">Video Editor</option>
-                            <option value="data_management">Data Management Staff</option>
-                        </optgroup>
-                    </select> -->
-                </fieldset>
-                <button type="submit" class="btn bg-primary btn-lg w-100 text-white">Kirim</button>
-            </form>
-        </div>
-        <!-- Akhir Form Pendaftaran -->
-    
-    <!-- Akhir Pengumuman -->
-    <br>
-    <br>
-    <!-- Footer -->
-    <footer class="page-footer font-small text-white" style="background-color: #133B5C;">
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2021 Copyright:
-            <a href="https://github.com/chrystalio" class="text-white">Chrystalio</a>
-        </div>
-        <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <tr>
+                <td>Nama Lengkap</td>
+                <td>:</td>
+                <td><input type=text name=Nama></td>
+            </tr>
+
+            <tr>
+                <td>Lama Study</td>
+                <td>:</td>
+                <td><input type=text name=Tahun size=5>Tahun<input type=text name=Bulan size=5>Bulan</td>
+            </tr>
+
+            <tr>
+                <td>IPK Terakhir</td>
+                <td>:</td>
+                <td><input type=text name=IPK size=5></td>
+            </tr>
+
+            <tr>
+                <td>Jurusan</td>
+                <td>:</td>
+                <td>
+                    <input type=radio name="jurusan" value="TI">Teknik Informatika
+                    <input type=radio name="jurusan" value="Elektro">Teknik Elektro
+                    <input type=radio name="jurusan" value="Sipil">Teknik Sipil
+                </td>
+            </tr>
+
+            <tr>
+                <td>Tempat dan Tanggal Lahir</td>
+                <td>:</td>
+                <td><input type=text name=Tempat size=15>
+                    <select name=Tgl>
+                        <option name=Tgl>Tanggal
+                        <option name=Tgl>1
+                        <option name=Tgl>2
+                        <option name=Tgl>3
+                        <option name=Tgl>4
+                        <option name=Tgl>5
+                        <option name=Tgl>6
+                        <option name=Tgl>7
+                        <option name=Tgl>8
+                        <option name=Tgl>9
+                        <option name=Tgl>10
+                        <option name=Tgl>11
+                        <option name=Tgl>12
+                        <option name=Tgl>13
+                        <option name=Tgl>14
+                        <option name=Tgl>15
+                        <option name=Tgl>16
+                        <option name=Tgl>17
+                        <option name=Tgl>18
+                        <option name=Tgl>19
+                        <option name=Tgl>20
+                        <option name=Tgl>21
+                        <option name=Tgl>22
+                        <option name=Tgl>23
+                        <option name=Tgl>24
+                        <option name=Tgl>26
+                        <option name=Tgl>27
+                        <option name=Tgl>28
+                        <option name=Tgl>29
+                        <option name=Tgl>30
+                        <option name=Tgl>31
+                    </select>
+                    <select name=Bln>
+                        <option name=Bln>Bulan
+                        <option name=Bln>Januari
+                        <option name=Bln>Februari
+                        <option name=Bln>Maret
+                        <option name=Bln>April
+                        <option name=Bln>Mei
+                        <option name=Bln>Juni
+                        <option name=Bln>Juli
+                        <option name=Bln>Agustus
+                        <option name=Bln>September
+                        <option name=Bln>Oktober
+                        <option name=Bln>November
+                        <option name=Bln>Desember
+                    </select>
+                    <select name=Thn>
+                        <option name=Thn>Tahun
+                        <option name=Thn>2020
+                        <option name=Thn>2019
+                        <option name=Thn>2018
+                        <option name=Thn>2017
+                        <option name=Thn>2016
+                        <option name=Thn>2015
+                        <option name=Thn>2014
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>:</td>
+                <td><input type=radio name=JK value=Laki-laki>Laki-laki<input type=radio name=JK
+                        value=Perempuan>Perempuan</td>
+            </tr>
+
+            <tr>
+                <td>Alamat</td>
+                <td>:</td>
+                <td><input type=textfield name=alamat></td>
+            </tr>
+
+            <tr>
+                <td>Tentang Anda</td>
+                <td>:</td>
+                <td><textarea rows="5" cols="22" name="tentang"></textarea></td>
+            </tr>
+
+            <tr>
+                <td> </td>
+                <td> </td>
+                <td><input type="submit" name="submit" value="INPUT DATA">
+                    <input type="reset" name="reset" value="BERSIH"></td>
+            </tr>
+        </form>
+    </table>
 </body>
 
 </html>
