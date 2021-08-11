@@ -17,16 +17,16 @@
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="inputEmail4">Nama Depan</label>
-          <input type="text" class="form-control" id="inputNamaDepan">
+          <input type="text" class="form-control" id="inputNamaDepan" placeholder="Masukkan Nama Depan">
         </div>
         <div class="form-group col-md-6">
           <label for="inputPassword4">Nama Belakang</label>
-          <input type="text" class="form-control" id="inputNamaBelakang">
+          <input type="text" class="form-control" id="inputNamaBelakang" placeholder="Masukkan Nama Belakang">
         </div>
       </div>
       <div class="form-group">
         <label for="inputAddress">Alamat</label>
-        <input type="text" class="form-control" id="inputAlamat" placeholder="1234 Main St">
+        <input type="text" class="form-control" id="inputAlamat" placeholder="Masukkan Alamat">
       </div>
       <div class="form-group">
         <label for="inputJenisKelamin">Jenis Kelamin</label>
@@ -36,13 +36,12 @@
         </select>
       </div>
       <div class="form-group">
-        <div class="form-group">
-          <label for="inputCity">Usia</label>
+        <div class="form-group mb-5">
+          <label for="inputUmur">Usia</label>
           <input type="number" class="form-control" id="inputUmur" min="17" max="25">
         </div>
       </div>
-
-      <button type="submit" class="btn btn-primary">Sign in</button>
+      <button type="submit" class="btn btn-primary  btn-lg btn-block" >Submit</button>
     </form>
   </div>
 
