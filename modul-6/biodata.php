@@ -18,8 +18,8 @@
         $JK = $_POST['JK'];
         $umur = $_POST['inputUmur']
     ?>
-
-    <div class="container biodata">
+`~
+    <div class="container biodata p-8">
         <div class="card text-center">
             <div class="card-header bg-dark">
                 <h4 class="text-white">DATA BIODATA MAHASISWA</h4>
@@ -31,32 +31,6 @@
                 <p class="card-text">Umur : <?php echo $umur; ?></p>
             </div>
         </div>
-        <!-- <div class="card"> -->
-        <!-- <table border="0" width="100%" style="">
-                <tbody>
-                    <tr>
-                        <td width="25%" valign="top" class="textt">Nama Lengkap</td>
-                        <td width="2%">:</td>
-                        <td style="color: #e9a7f9; font-weight:bold">Bayu Afrizatul Rizki</td>
-                    </tr>
-                    <tr>
-                        <td class="textt">Alamat</td>
-                        <td>:</td>
-                        <td>Laki-Laki</td>
-                    </tr>
-                    <tr>
-                        <td class="textt">Jenis Kelamin</td>
-                        <td>:</td>
-                        <td>Airmolek,Riau</td>
-                    </tr>
-                    <tr>
-                        <td class="textt">Umur</td>
-                        <td>:</td>
-                        <td>31/08/1997</td>
-                    </tr>
-                </tbody>
-            </table> -->
-        <!-- </div> -->
     </div>
 
 
