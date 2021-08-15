@@ -13,13 +13,14 @@
     function pesanPembuka($toko, $salam){
         echo $salam. ", ";
         echo "Selamat Datang Di " .$toko."<br/>";
-        echo "Selamat Berbelanja <br/>";
+        echo "Selamat Berbelanja";
     }
 
 
     // Fungsi dengan Nilai Default
-    function kalimatPembuka($nama_acara, $salam_pembuka="Salam Sejahtera Untuk Kita Semua"){
-        echo $salam_pembuka.", ";
+    function kalimatPembuka($nama_acara, $salam_pembuka){
+        
+        echo "$salam_pembuka, <br> ";
         echo "Selamat Datang di acara peresmian ". $nama_acara ."<br/>";
         echo "Semoga dengan rahmat tuhan YME Kegiatan kita dapat berjalan dengan lancar <br/>";
     }
@@ -27,17 +28,16 @@
     // Fungsi Yang Mengembalikan Nilai
     function hitungUmur($thn_lahir, $thn_sekarang){
         $umur = $thn_sekarang - $thn_lahir;
-        return $umur;
-        echo "Umur saya adalah " . hitungUmur($thn_lahir, $thn_sekarang) . " tahun";
+        echo "Umur saya adalah " . $umur . " tahun";
     }
 
     // Fungsi Di Dalam Fungsi 
         // membuat fungsi
-        function perkenalan($nama_mahasiswa, $salam_pembukaan="Halo Semuanya"){
-            echo "<p>$salam_pembukaan</p>"  ."";
+        function perkenalan($nama_mahasiswa, $salam_pembukaan){
+            echo $salam_pembukaan;
             echo "Perkenalkan, nama saya ".$nama_mahasiswa ."<br/>";
             // memanggil fungsi lain
-            echo "Saya berusia ". hitungUmur(2002, 2021) ." tahun <br>";
+            echo "Saya berusia ". hitungUmur(2002, 2021) . " tahun <br>";
             echo "Senang berkenalan dengan anda<br/>";
         }
 

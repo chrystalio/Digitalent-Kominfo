@@ -4,19 +4,21 @@
     <title>Hitung Luas Segitiga Menggunakan PHP</title>
 </head>
 <body>
+<!-- kalimatPembuka | salam_pembuka -->
+<!-- perkenalan | salam_pembukaan -->
     <?php
         if(isset($_POST['submit'])){
-            $alas   = $_POST['alas'];
-            $tinggi = $_POST['tinggi'];
-            $toko   = $_POST['toko'];
-            $salam  = $_POST['salam'];
-            $salam_pembuka = $_POST['salam_pembuka'];
-            $nama_acara =   $_POST['acara'];
-            $thn_lahir = $_POST['thn_lahir'];
-            $thn_sekarang = $_POST['thn_sekarang'];
-            $salam_pembukaan = $_POST['salam_pembukaan'];
-            $nama_mahasiswa = $_POST['nama_mahasiswa'];
-            $faktorial = $_POST['angka'];
+            $alas               = $_POST['alas'];
+            $tinggi             = $_POST['tinggi'];
+            $toko               = $_POST['toko'];
+            $salam              = $_POST['salam'];
+            $salam_pembuka      = (($_POST['salam_pembuka'] == "") ? 'Salam Sejahtera Untuk Kita Semua' : $_POST['salam_pembuka']);
+            $nama_acara         = $_POST['acara'];
+            $thn_lahir          = $_POST['thn_lahir'];
+            $thn_sekarang       = $_POST['thn_sekarang'];
+            $salam_pembukaan    = (($_POST['salam_pembukaan'] == "") ? 'Halo Semuanya' : $_POST['salam_pembukaan']);
+            $nama_mahasiswa     = $_POST['nama_mahasiswa'];
+            $faktorial          = $_POST['angka'];
         }
 
         echo '<h1>Hasil Hitung Luas Segitiga</h1>';
@@ -32,6 +34,7 @@
         echo '<hr>';
 
         echo '<h1>Hasil Hitung Umur</h1>';
+        // echo 'umur saya saat ini adalah ' . hitungUmur($thn_lahir, $thn_sekarang) . ' tahun';
         echo hitungUmur($thn_lahir, $thn_sekarang);
         echo '<hr>';
 

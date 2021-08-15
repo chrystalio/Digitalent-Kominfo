@@ -89,7 +89,7 @@
             <tr>
                 <td></td>
                 <td></td>
-                <td><input type="submit" name="submit" value="Hitung"></td>
+                <td><input type="submit" name="submit" value="Submit"></td>
             </tr>
         </table>
     </form>
