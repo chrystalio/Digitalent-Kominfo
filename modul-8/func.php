@@ -28,7 +28,7 @@
     // Fungsi Yang Mengembalikan Nilai
     function hitungUmur($thn_lahir, $thn_sekarang){
         $umur = $thn_sekarang - $thn_lahir;
-        echo "Umur saya adalah " . $umur . " tahun";
+        echo "umur saya saat ini adalah " . $umur . " tahun";
     }
 
     // Fungsi Di Dalam Fungsi 
